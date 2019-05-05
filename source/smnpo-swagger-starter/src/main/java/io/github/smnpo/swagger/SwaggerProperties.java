@@ -1,4 +1,4 @@
-package io.github.smnpo.swagger;
+package io.github.smnpo.gourd.api.config;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

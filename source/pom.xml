@@ -11,7 +11,7 @@
     <modules>
         <!--<module>gourd-common</module>-->
         <module>smnpo-springboot-web-starter</module>
-        <module>smnpo-swagger-starter</module>
+        <!--<module>smnpo-swagger-starter</module>-->
     </modules>
 
     <properties>

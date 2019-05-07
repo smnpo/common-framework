@@ -7,30 +7,18 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>1.5.18.RELEASE</version>
+        <version>2.1.4.RELEASE</version>
     </parent>
 
     <groupId>io.github.smnpo</groupId>
     <artifactId>smnpo-springboot-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
-    <!-- <modules>
-        <module>smnpo-springboot-web-starter</module>
-        <module>smnpo-swagger-starter</module>
-    </modules> -->
 
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <!--<maven.plugin.compiler.version>3.7.0</maven.plugin.compiler.version>-->
-        <!--<maven.plugin.resource.version>2.7</maven.plugin.resource.version>-->
-        <!--<maven.plugin.install.version>2.5.2</maven.plugin.install.version>-->
-        <!--<maven.plugin.clean.version>2.5</maven.plugin.clean.version>-->
-        <!--<maven.plugin.antrun.version>1.8</maven.plugin.antrun.version>-->
-        <!--<maven.plugin.dependency.version>3.1.1</maven.plugin.dependency.version>-->
-        <!--<maven.plugin.eclipse.version>2.9</maven.plugin.eclipse.version>-->
         <lombok.version>1.18.2</lombok.version>
-        <springboot.version>1.5.18.RELEASE</springboot.version>
     </properties>
 
     <dependencies>
@@ -44,9 +32,38 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter</artifactId>
-            <version>${springboot.version}</version>
             <optional>true</optional>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-webflux</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-tomcat</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>io.projectreactor</groupId>
+            <artifactId>reactor-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+
     </dependencies>
 
     <dependencyManagement>
@@ -95,76 +112,5 @@
                 <filtering>false</filtering>
             </resource>
         </resources>
-        <!--<pluginManagement>-->
-            <!--<plugins>-->
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-compiler-plugin</artifactId>-->
-                    <!--<version>${maven.plugin.compiler.version}</version>-->
-                    <!--<configuration>-->
-                        <!--<source>${java.version}</source>-->
-                        <!--<target>${java.version}</target>-->
-                        <!--<showWarnings>true</showWarnings>-->
-                    <!--</configuration>-->
-                <!--</plugin>-->
-
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-resources-plugin</artifactId>-->
-                    <!--<version>${maven.plugin.resource.version}</version>-->
-                <!--</plugin>-->
-
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-install-plugin</artifactId>-->
-                    <!--<version>${maven.plugin.install.version}</version>-->
-                <!--</plugin>-->
-
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-clean-plugin</artifactId>-->
-                    <!--<version>${maven.plugin.clean.version}</version>-->
-                <!--</plugin>-->
-
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-antrun-plugin</artifactId>-->
-                    <!--<version>${maven.plugin.antrun.version}</version>-->
-                <!--</plugin>-->
-
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-dependency-plugin</artifactId>-->
-                    <!--<version>${maven.plugin.dependency.version}</version>-->
-                <!--</plugin>-->
-
-                <!--<plugin>-->
-                    <!--<groupId>org.apache.maven.plugins</groupId>-->
-                    <!--<artifactId>maven-eclipse-plugin</artifactId>-->
-                    <!--<version>${maven.plugin.eclipse.version}</version>-->
-                    <!--<configuration>-->
-                        <!--<downloadSources>false</downloadSources>-->
-                        <!--<downloadJavadocs>false</downloadJavadocs>-->
-                        <!--<wtpversion>2.0</wtpversion>-->
-                        <!--<sourceIncludes>-->
-                            <!--<sourceInclude>**/*.xml</sourceInclude>-->
-                            <!--<sourceInclude>**/*.jsp</sourceInclude>-->
-                        <!--</sourceIncludes>-->
-                        <!--<additionalConfig>-->
-                            <!--<file>-->
-                                <!--<name>.settings/org.eclipse.core.resources.prefs</name>-->
-                                <!--<content>-->
-                                    <!--<![CDATA[eclipse.preferences.version=1${line.separator}encoding/<project>=${project.build.sourceEncoding}${line.separator}]]>-->
-                                <!--</content>-->
-                            <!--</file>-->
-                        <!--</additionalConfig>-->
-                        <!--<additionalProjectnatures>-->
-                            <!--<projectnature>org.springframework.ide.eclipse.core.springnature</projectnature>-->
-                        <!--</additionalProjectnatures>-->
-                    <!--</configuration>-->
-                <!--</plugin>-->
-
-            <!--</plugins>-->
-        <!--</pluginManagement>-->
     </build>
 </project>

@@ -1,4 +1,4 @@
-package io.github.smnpo.gourd.api.config;
+package io.github.smnpo.swagger;
 
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.annotation.Bean;

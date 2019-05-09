@@ -152,16 +152,24 @@
 
     <repositories>
         <repository>
-            <id>personal_maven_repository</id>
-            <name>personal maven repository</name>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/71943-release-LWfjuf/</url>
             <releases>
                 <enabled>true</enabled>
             </releases>
             <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/71943-snapshot-gMBvZN/</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
                 <enabled>true</enabled>
             </snapshots>
-            <url>http://maven.develophelper.com/repository/maven-public/</url>
-            <layout>default</layout>
         </repository>
     </repositories>
 </project>

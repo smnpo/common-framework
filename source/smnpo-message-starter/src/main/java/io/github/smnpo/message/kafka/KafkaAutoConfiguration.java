@@ -1,6 +1,6 @@
-package io.github.smnpo.kafka;
+package io.github.smnpo.message.kafka;
 
-import io.github.smnpo.kafka.properties.ProducerProperties;
+import io.github.smnpo.message.kafka.properties.ProducerProperties;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.kafka.clients.producer.ProducerConfig;
 import org.apache.kafka.common.serialization.StringSerializer;

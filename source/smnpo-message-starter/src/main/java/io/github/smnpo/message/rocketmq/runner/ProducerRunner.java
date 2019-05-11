@@ -1,4 +1,4 @@
-package io.github.smnpo.rocketmq.runner;
+package io.github.smnpo.message.rocketmq.runner;
 
 import com.aliyun.openservices.ons.api.Producer;
 import lombok.Data;

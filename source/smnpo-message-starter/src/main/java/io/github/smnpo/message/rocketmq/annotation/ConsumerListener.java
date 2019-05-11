@@ -1,4 +1,4 @@
-package io.github.smnpo.rocketmq.annotation;
+package io.github.smnpo.message.rocketmq.annotation;
 
 import java.lang.annotation.*;
 

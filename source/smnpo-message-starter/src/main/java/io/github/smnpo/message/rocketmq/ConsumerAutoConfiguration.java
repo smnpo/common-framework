@@ -1,12 +1,12 @@
-package io.github.smnpo.rocketmq;
+package io.github.smnpo.message.rocketmq;
 
 import com.aliyun.openservices.ons.api.Consumer;
 import com.aliyun.openservices.ons.api.MessageListener;
 import com.aliyun.openservices.ons.api.ONSFactory;
 import com.aliyun.openservices.ons.api.PropertyKeyConst;
-import io.github.smnpo.rocketmq.properties.ConsumerProperties;
-import io.github.smnpo.rocketmq.properties.ProducerProperties;
-import io.github.smnpo.rocketmq.runner.ConsumerRunner;
+import io.github.smnpo.message.rocketmq.properties.ConsumerProperties;
+import io.github.smnpo.message.rocketmq.properties.ProducerProperties;
+import io.github.smnpo.message.rocketmq.runner.ConsumerRunner;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnMissingBean;

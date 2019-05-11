@@ -1,4 +1,4 @@
-package io.github.smnpo.rocketmq.properties;
+package io.github.smnpo.message.rocketmq.properties;
 
 import lombok.Data;
 

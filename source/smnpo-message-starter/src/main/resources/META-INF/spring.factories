@@ -1,0 +1,4 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  io.github.smnpo.message.kafka.KafkaAutoConfiguration,\
+  io.github.smnpo.message.rocketmq.ConsumerAutoConfiguration,\
+  io.github.smnpo.message.rocketmq.ProducerAutoConfiguration

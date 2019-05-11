@@ -1,4 +1,4 @@
-package io.github.smnpo.kafka.properties;
+package io.github.smnpo.message.kafka.properties;
 
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;

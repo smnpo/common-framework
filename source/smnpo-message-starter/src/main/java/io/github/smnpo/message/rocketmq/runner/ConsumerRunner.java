@@ -1,11 +1,11 @@
-package io.github.smnpo.rocketmq.runner;
+package io.github.smnpo.message.rocketmq.runner;
 
 import com.aliyun.openservices.ons.api.Consumer;
 import com.aliyun.openservices.ons.api.MessageListener;
 import com.aliyun.openservices.ons.api.bean.ConsumerBean;
 import com.aliyun.openservices.ons.api.bean.Subscription;
 import com.aliyun.openservices.ons.api.impl.rocketmq.ConsumerImpl;
-import io.github.smnpo.rocketmq.annotation.ConsumerListener;
+import io.github.smnpo.message.rocketmq.annotation.ConsumerListener;
 import lombok.Data;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;

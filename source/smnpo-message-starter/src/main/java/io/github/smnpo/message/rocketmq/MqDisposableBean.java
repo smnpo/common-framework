@@ -1,4 +1,4 @@
-package io.github.smnpo.rocketmq;
+package io.github.smnpo.message.rocketmq;
 
 import com.aliyun.openservices.ons.api.Consumer;
 import com.aliyun.openservices.ons.api.Producer;

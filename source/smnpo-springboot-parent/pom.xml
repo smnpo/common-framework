@@ -137,6 +137,8 @@
                 <directory>src/main/resources</directory>
                 <includes>
                     <include>**/*.properties</include>
+                    <include>**/*.factories</include>
+                    <include>**/*.provides</include>
                     <include>**/*.yml</include>
                     <include>**/*.xml</include>
                     <include>**/*.sql</include>
@@ -178,4 +180,15 @@
             </snapshots>
         </repository>
     </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <url>https://repo.rdc.aliyun.com/repository/71943-release-LWfjuf/</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <url>https://repo.rdc.aliyun.com/repository/71943-snapshot-gMBvZN/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
